@@ -51,34 +51,6 @@ def reassemble(target_dir: Path) -> None:
             part_path.unlink()
         print(f"[Reassemble] Finished {output_path.name} ({output_path.stat().st_size / (1024 * 1024):.2f} MiB)")
 
-def reassemble(target_dir):
-    print(f"[Reassemble] Scanning for chunked files in {target_dir}...")
-    part00_files = glob.glob(os.path.join(target_dir, "**", "*.part00"), recursive=True)
-    if not part00_files:
-        print("[Reassemble] No chunked files found.")
-        return
-
-    for p0 in part00_files:
-        base_file = p0[:-7] # strip .part00
-        pattern = f"{base_file}.part*"
-        all_parts = sorted(glob.glob(pattern))
-        print(f"[Reassemble] Reassembling {len(all_parts)} parts into {os.path.basename(base_file)}...")
-        
-        with open(base_file, "wb") as out_f:
-            for part in all_parts:
-                with open(part, "rb") as in_f:
-                    while True:
-                        buf = in_f.read(8 * 1024 * 1024)
-                        if not buf:
-                            break
-                        out_f.write(buf)
-                # Remove part to save disk space on CI
-                try:
-                    os.remove(part)
-                except OSError:
-                    pass
-        print(f"[Reassemble] Finished {base_file} ({os.path.getsize(base_file) / (1024*1024):.2f} MB)")
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Reassemble numbered .partNN files.")
     parser.add_argument("directory", nargs="?", type=Path, default=Path("."))
