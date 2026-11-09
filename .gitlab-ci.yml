@@ -1,0 +1,49 @@
+stages:
+  - build
+
+variables:
+  GIT_STRATEGY: clone
+  GIT_DEPTH: 10
+
+build_ipa:
+  stage: build
+  tags:
+    - saas-macos-medium-m1
+  timeout: 1h 30m
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main" || $CI_COMMIT_BRANCH == "master"'
+    - if: '$CI_COMMIT_TAG'
+    - if: '$CI_PIPELINE_SOURCE == "web"'
+  before_script:
+    - sudo xcode-select -s /Applications/Xcode_16.2.app/Contents/Developer 2>/dev/null || sudo xcode-select -s /Applications/Xcode_16.1.app/Contents/Developer 2>/dev/null || sudo xcode-select -s /Applications/Xcode_16.0.app/Contents/Developer 2>/dev/null || sudo xcode-select -s /Applications/Xcode_15.4.app/Contents/Developer 2>/dev/null || sudo xcode-select -s /Applications/Xcode.app/Contents/Developer 2>/dev/null || true
+    - xcodebuild -version
+    - python3 --version
+  script:
+    - echo "=== Reassembling Large Data Chunks ==="
+    - python3 tools/reassemble_chunks.py unity_ios_project/ExportedProject/build_ios
+    - echo "=== Building Xcode Archive ==="
+    - mkdir -p build
+    - >
+      xcodebuild archive
+      -project unity_ios_project/ExportedProject/build_ios/Unity-iPhone.xcodeproj
+      -scheme Unity-iPhone
+      -configuration Release
+      -destination "generic/platform=iOS"
+      -archivePath build/Unity-iPhone.xcarchive
+      CODE_SIGNING_ALLOWED=NO
+      CODE_SIGN_IDENTITY=""
+      CODE_SIGNING_REQUIRED=NO
+      COMPILER_INDEX_STORE_ENABLE=NO
+    - echo "=== Packaging Unsigned IPA ==="
+    - mkdir -p build/Payload
+    - cp -R build/Unity-iPhone.xcarchive/Products/Applications/*.app build/Payload/
+    - cd build
+    - zip -qr Dota2Mobile-unsigned.ipa Payload
+    - cp Dota2Mobile-unsigned.ipa Dota2Mobile.ipa
+    - ls -lh Dota2Mobile-unsigned.ipa Dota2Mobile.ipa
+  artifacts:
+    name: "Dota2Mobile-iOS-unsigned-ipa-$CI_COMMIT_SHORT_SHA"
+    paths:
+      - build/Dota2Mobile-unsigned.ipa
+      - build/Dota2Mobile.ipa
+    expire_in: 14 days

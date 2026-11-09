@@ -1,0 +1,17 @@
+{
+    "name": "Dota.App",
+    "rootNamespace": "Dota.App",
+    "references": [
+        "Dota.Gameplay",
+        "Dota.Client"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

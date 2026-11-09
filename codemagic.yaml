@@ -1,0 +1,57 @@
+workflows:
+  ios-native:
+    name: Build Dota 2 iOS IPA (Metal / 120Hz ProMotion)
+    max_build_duration: 120
+    instance_type: mac_mini_m2
+    environment:
+      xcode: latest
+      vars:
+        XCODE_PROJECT: "unity_ios_project/ExportedProject/build_ios/Unity-iPhone.xcodeproj"
+        XCODE_SCHEME: "Unity-iPhone"
+    triggering:
+      events:
+        - push
+        - tag
+      branch_patterns:
+        - pattern: '*'
+          include: true
+          source: true
+    scripts:
+      - name: Reassemble Large Data Chunks
+        script: |
+          echo "=== Reassembling Large Data Chunks ==="
+          python3 tools/reassemble_chunks.py unity_ios_project/ExportedProject/build_ios
+      - name: Build Xcode Archive
+        script: |
+          echo "=== Building Xcode Archive ==="
+          mkdir -p build /tmp/xcodebuild_logs
+          set -o pipefail
+          xcodebuild archive \
+            -project "$XCODE_PROJECT" \
+            -scheme "$XCODE_SCHEME" \
+            -configuration Release \
+            -destination "generic/platform=iOS" \
+            -archivePath build/Unity-iPhone.xcarchive \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            COMPILER_INDEX_STORE_ENABLE=NO 2>&1 | tee /tmp/xcodebuild_logs/xcodebuild.log || {
+            echo "=========================================="
+            echo "=== XCODE COMPILER ERRORS ==="
+            echo "=========================================="
+            grep -n -C 3 "error:" /tmp/xcodebuild_logs/xcodebuild.log || true
+            exit 65
+          }
+      - name: Package Unsigned IPA
+        script: |
+          echo "=== Packaging Unsigned IPA ==="
+          mkdir -p build/Payload
+          cp -R build/Unity-iPhone.xcarchive/Products/Applications/*.app build/Payload/
+          cd build
+          zip -qr Dota2Mobile-unsigned.ipa Payload
+          cp Dota2Mobile-unsigned.ipa Dota2Mobile.ipa
+          ls -lh Dota2Mobile-unsigned.ipa Dota2Mobile.ipa
+    artifacts:
+      - build/*.ipa
+      - build/Unity-iPhone.xcarchive
+      - /tmp/xcodebuild_logs/*.log

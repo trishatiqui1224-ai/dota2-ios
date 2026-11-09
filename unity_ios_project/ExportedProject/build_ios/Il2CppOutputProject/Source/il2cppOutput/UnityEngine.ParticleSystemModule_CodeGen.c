@@ -1,0 +1,49 @@
+﻿#include "pch-c.h"
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void EmbeddedAttribute__ctor_m7FF5B4E3620EF8A22C32F8DF43762DCC61F7E1A9 (void);
+extern void RefSafetyRulesAttribute__ctor_m78F1D9F933EB9DA67BD8C2EB8F4D924BBF2974A5 (void);
+extern void ParticleSystem_add_onEmit_mCCF090A84D1D58018DB2F01ACA70DB724BBD321A (void);
+extern void ParticleSystem_remove_onEmit_mB229FA9BA0C38B05F7E242A79006687286495BA5 (void);
+extern void ParticleSystem_Emit_m3E9E6359087607E84E0D4D35844D80D9452AD72D (void);
+extern void ParticleSystem_Emit_Internal_m54D6D9A78E8634846C9DB6445C0E0A0885E8A20E (void);
+extern void ParticleSystem___AutoStaticsCleanup_Unity_Scripting_LifecycleManagement_CodeLoadedScope_Exiting_mABB866DFC7CB7A904B161D9B45F472B645CFF9AC (void);
+extern void ParticleSystem__cctor_m621446C630A0558BA2F9D4992C9E306BFEC92A85 (void);
+extern void ParticleSystem_Emit_Internal_Injected_m2FDA9094E323EDFE3C1F5F2CE8DA7830E728556D (void);
+extern void ParticleSystemRenderer_GetMeshes_m3CA9AA8947C7F0468F6C0B7F1344D747EA43D440 (void);
+extern void ParticleSystemRenderer_GetMeshes_Injected_m6DADBA008313172FAE4E6150C67ADA770858C483 (void);
+static Il2CppMethodPointer s_methodPointers[11] = 
+{
+	EmbeddedAttribute__ctor_m7FF5B4E3620EF8A22C32F8DF43762DCC61F7E1A9,
+	RefSafetyRulesAttribute__ctor_m78F1D9F933EB9DA67BD8C2EB8F4D924BBF2974A5,
+	ParticleSystem_add_onEmit_mCCF090A84D1D58018DB2F01ACA70DB724BBD321A,
+	ParticleSystem_remove_onEmit_mB229FA9BA0C38B05F7E242A79006687286495BA5,
+	ParticleSystem_Emit_m3E9E6359087607E84E0D4D35844D80D9452AD72D,
+	ParticleSystem_Emit_Internal_m54D6D9A78E8634846C9DB6445C0E0A0885E8A20E,
+	ParticleSystem___AutoStaticsCleanup_Unity_Scripting_LifecycleManagement_CodeLoadedScope_Exiting_mABB866DFC7CB7A904B161D9B45F472B645CFF9AC,
+	ParticleSystem__cctor_m621446C630A0558BA2F9D4992C9E306BFEC92A85,
+	ParticleSystem_Emit_Internal_Injected_m2FDA9094E323EDFE3C1F5F2CE8DA7830E728556D,
+	ParticleSystemRenderer_GetMeshes_m3CA9AA8947C7F0468F6C0B7F1344D747EA43D440,
+	ParticleSystemRenderer_GetMeshes_Injected_m6DADBA008313172FAE4E6150C67ADA770858C483,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_ParticleSystemModule_CodeGenModule;
+const Il2CppCodeGenModule g_UnityEngine_ParticleSystemModule_CodeGenModule = 
+{
+	"UnityEngine.ParticleSystemModule.dll",
+	11,
+	s_methodPointers,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};
