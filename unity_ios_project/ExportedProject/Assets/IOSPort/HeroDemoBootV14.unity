@@ -1,0 +1,2283 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 10
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.26, g: 0.2, b: 0.24, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 2
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 2
+    m_PVRDenoiserTypeIndirect: 2
+    m_PVRDenoiserTypeAO: 2
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 1
+    m_PVRFilteringGaussRadiusAO: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 3
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    buildHeightMesh: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &241112162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 241112163}
+  m_Layer: 0
+  m_Name: Shadow Fiend Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &241112163
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241112162}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &400485921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400485923}
+  - component: {fileID: 400485922}
+  m_Layer: 0
+  m_Name: v1.4 Offline Dota App
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &400485922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400485921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de293767385ce4040afedf16bb8fc2c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Dota.Port.OfflineDotaApp
+  heroRoster:
+  - key: antimage
+    displayName: Anti-Mage
+    prefabResourceKey: HeroDemos/antimage
+    portrait: {fileID: 21300000, guid: 4ce51661d930d4844b1ae8b84380abbb, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: d305455c2e46f5442b0e49d7e584b58a, type: 2}
+    - {fileID: 21300000, guid: cc4b033b3af8683458abfadeb3ff3aed, type: 2}
+    - {fileID: 21300000, guid: ddc89df2f1cdbd746974d548c2c7bfd4, type: 2}
+    - {fileID: 21300000, guid: 2872ce5f50e6724458771a55b56e99b7, type: 2}
+    abilityNames:
+    - Mana Break
+    - Blink
+    - Counterspell
+    - Mana Void
+  - key: axe
+    displayName: Axe
+    prefabResourceKey: HeroDemos/axe
+    portrait: {fileID: 21300000, guid: f9b9b847da7c7d94d8eb514d46b4c7fa, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 05b5ce5afb842e148ba3b3f1df81c6d1, type: 2}
+    - {fileID: 21300000, guid: 9b048c1345e43e44591aca590b434112, type: 2}
+    - {fileID: 21300000, guid: f8218e2d286c3fd4cb165589a969321e, type: 2}
+    - {fileID: 21300000, guid: d00aadb1ddfe3554bbf70a0bbd7b9324, type: 2}
+    abilityNames:
+    - Berserkers Call
+    - Battle Hunger
+    - Counter Helix
+    - Culling Blade
+  - key: bane
+    displayName: Bane
+    prefabResourceKey: HeroDemos/bane
+    portrait: {fileID: 21300000, guid: 9977e4d1bb344514ead96017b05e029b, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 335622e8eddebe54f9ba285d304605d9, type: 2}
+    - {fileID: 21300000, guid: d4d1b76ec12d5204a982a6301c6d45ae, type: 2}
+    - {fileID: 21300000, guid: 9f8dc691a09c40a4db91711402de24dc, type: 2}
+    - {fileID: 21300000, guid: 92109ac96933a12419fef70934481554, type: 2}
+    abilityNames:
+    - Enfeeble
+    - Brain Sap
+    - Nightmare
+    - Fiends Grip
+  - key: bloodseeker
+    displayName: Bloodseeker
+    prefabResourceKey: HeroDemos/bloodseeker
+    portrait: {fileID: 21300000, guid: 744f906ed5ea4394eb568cdaa98dc7c2, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 713aa1524c7abcb4f99dea69ab6079da, type: 2}
+    - {fileID: 21300000, guid: 3b38572f967eb474c8258e5ed91655c8, type: 2}
+    - {fileID: 21300000, guid: f1b7cc1ef5aed7444bf68a20e0246f5a, type: 2}
+    - {fileID: 21300000, guid: d3d00f306d3089b4099288ebac850279, type: 2}
+    abilityNames:
+    - Bloodrage
+    - Blood Bath
+    - Thirst
+    - Rupture
+  - key: crystal_maiden
+    displayName: Crystal Maiden
+    prefabResourceKey: HeroDemos/crystal_maiden
+    portrait: {fileID: 21300000, guid: a17330dbb0987184592d1d579945988c, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 0c0b2f38044f9d14796e75b0ab5f33af, type: 2}
+    - {fileID: 21300000, guid: 0d1f3a6ba0746154a84a1ce091fbe67d, type: 2}
+    - {fileID: 21300000, guid: bd77ff40ca3ba3a438e0bad5b748444d, type: 2}
+    - {fileID: 21300000, guid: 5edae256d12819c4291f946c501456ce, type: 2}
+    abilityNames:
+    - Crystal Nova
+    - Frostbite
+    - Brilliance Aura
+    - Freezing Field
+  - key: drow_ranger
+    displayName: Drow Ranger
+    prefabResourceKey: HeroDemos/drow_ranger
+    portrait: {fileID: 21300000, guid: f4d836cca124d8643b109d2dca23cd95, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 113c5e7b0fc352d46aa91c38bd98c2f9, type: 2}
+    - {fileID: 21300000, guid: 7681ba3ec1127f141a2ab33d37cfba3a, type: 2}
+    - {fileID: 21300000, guid: 9ad6e840abde0a14c932e5a3c5cafb98, type: 2}
+    - {fileID: 21300000, guid: f90a881f551c3d34cb4a441ba8b35cf4, type: 2}
+    abilityNames:
+    - Frost Arrows
+    - Wave Of Silence
+    - Multishot
+    - Marksmanship
+  - key: earthshaker
+    displayName: Earthshaker
+    prefabResourceKey: HeroDemos/earthshaker
+    portrait: {fileID: 21300000, guid: cfcaf522375638048afe604dbf358304, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 8300ee775d8b0784ba456be109f5f07c, type: 2}
+    - {fileID: 21300000, guid: 70bb96b5f2e390c428a6149aaa9cf243, type: 2}
+    - {fileID: 21300000, guid: bbb08281c5148b246a6a56b8e4e60689, type: 2}
+    - {fileID: 21300000, guid: da113d2331d0fc6409d8dd0711003d80, type: 2}
+    abilityNames:
+    - Fissure
+    - Enchant Totem
+    - Aftershock
+    - Echo Slam
+  - key: juggernaut
+    displayName: Juggernaut
+    prefabResourceKey: HeroDemos/juggernaut
+    portrait: {fileID: 21300000, guid: f99eb8fe91246b24898bc63a1593eb4d, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 39e1b9dd8490cf8448690e089568ed10, type: 2}
+    - {fileID: 21300000, guid: 657000692900bd54ca3ca43c16c5fb09, type: 2}
+    - {fileID: 21300000, guid: cd58fddd301afa449ba83fd0b594e365, type: 2}
+    - {fileID: 21300000, guid: 96b9b52a41ce9e848af5285c6297a374, type: 2}
+    abilityNames:
+    - Blade Fury
+    - Healing Ward
+    - Blade Dance
+    - Omni Slash
+  - key: mirana
+    displayName: Mirana
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 052a0e61a003e5c449d7c5b0aea1bc46, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Starfall
+    - Arrow
+    - Leap
+    - Invis
+  - key: nevermore
+    displayName: Shadow Fiend
+    prefabResourceKey: HeroDemos/nevermore
+    portrait: {fileID: 21300000, guid: 56a5ebdab35ebdd46bc560d00c217474, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: c84005067a998154d9069178270c2ee0, type: 2}
+    - {fileID: 21300000, guid: 62842e65b8fca3c42bbc369548ee2b1f, type: 2}
+    - {fileID: 21300000, guid: 90c67bab216b8ee4d9593a5b9901e9fc, type: 2}
+    - {fileID: 21300000, guid: 15a1d4734f2c3924b869afd2bd8f4899, type: 2}
+    abilityNames:
+    - Shadowraze1
+    - Shadowraze2
+    - Shadowraze3
+    - Requiem
+  - key: morphling
+    displayName: Morphling
+    prefabResourceKey: HeroDemos/morphling
+    portrait: {fileID: 21300000, guid: fde184ba3615b4f4c9693a89b5a18acb, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 4681843b0a3955d45bc678ae3a1c6d29, type: 2}
+    - {fileID: 21300000, guid: cf4533914c74f0042af928f42b3bf736, type: 2}
+    - {fileID: 21300000, guid: 2d79bdc8feaaa6b48930a3eac7666496, type: 2}
+    - {fileID: 21300000, guid: 627345f8ddd7731468882cd0959c3d19, type: 2}
+    abilityNames:
+    - Waveform
+    - Adaptive Strike Agi
+    - Morph Agi
+    - Replicate
+  - key: phantom_lancer
+    displayName: Phantom Lancer
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 8e38c740340d9284cbcc811dfb109dc5, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Spirit Lance
+    - Doppelwalk
+    - Phantom Edge
+    - Juxtapose
+  - key: puck
+    displayName: Puck
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: ba6a7512ae0a7b94483cc4066a01d7d5, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Illusory Orb
+    - Waning Rift
+    - Phase Shift
+    - Dream Coil
+  - key: pudge
+    displayName: Pudge
+    prefabResourceKey: HeroDemos/pudge
+    portrait: {fileID: 21300000, guid: cc8523b4b04f1424b99a99b8669262af, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 2fea1499f4b79f34ca55f55fdebc2fb3, type: 2}
+    - {fileID: 21300000, guid: 225442018d97a40438c6a4ebddacb700, type: 2}
+    - {fileID: 21300000, guid: 545bf1b86314944478fdcb762a97c557, type: 2}
+    - {fileID: 21300000, guid: eb44320e0e7b6194f874608d780cfd2a, type: 2}
+    abilityNames:
+    - Meat Hook
+    - Rot
+    - Flesh Heap
+    - Dismember
+  - key: razor
+    displayName: Razor
+    prefabResourceKey: HeroDemos/razor
+    portrait: {fileID: 21300000, guid: 0dfbc27482fd254428683a0b84b95187, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: f377cbc88c1b11346be408dbd3ae7645, type: 2}
+    - {fileID: 21300000, guid: 04e645b126e3a5444b7183db6a101a68, type: 2}
+    - {fileID: 21300000, guid: e7e56f25678461c4f89f42382c031d99, type: 2}
+    - {fileID: 21300000, guid: d257806690a820c4fbf1f7ef769d9d9a, type: 2}
+    abilityNames:
+    - Plasma Field
+    - Static Link
+    - Storm Surge
+    - Eye Of The Storm
+  - key: sand_king
+    displayName: Sand King
+    prefabResourceKey: HeroDemos/sand_king
+    portrait: {fileID: 21300000, guid: b58509b517c5d7645b3183f2eb8130cc, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: f2dcce1b7b101034e8ff63837b051456, type: 2}
+    - {fileID: 21300000, guid: da5f6d1771a8e5548b76ac75a6084ad3, type: 2}
+    - {fileID: 21300000, guid: 7d44884ba15520a449df296bd8df40dc, type: 2}
+    - {fileID: 21300000, guid: 7b41a8bbfdeb88c419e4e130665d66f9, type: 2}
+    abilityNames:
+    - Sandking Burrowstrike
+    - Sandking Sand Storm
+    - Sandking Scorpion Strike
+    - Sandking Epicenter
+  - key: storm_spirit
+    displayName: Storm Spirit
+    prefabResourceKey: HeroDemos/storm_spirit
+    portrait: {fileID: 21300000, guid: 8e2b467f8f4d01347af7db9bec9a3db0, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: c10ec748ee014ee4da82fc0939f18f31, type: 2}
+    - {fileID: 21300000, guid: fe1174af309887f4fa61710d4ae3c606, type: 2}
+    - {fileID: 21300000, guid: 6034baa13fd9ba44bb8f6e99ebc0653d, type: 2}
+    - {fileID: 21300000, guid: 0ec0abe42bbc7714e86f4270f9f4fc05, type: 2}
+    abilityNames:
+    - Static Remnant
+    - Electric Vortex
+    - Overload
+    - Ball Lightning
+  - key: sven
+    displayName: Sven
+    prefabResourceKey: HeroDemos/sven
+    portrait: {fileID: 21300000, guid: 42f7466e05c11d548bd8079a1c811756, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: a7de276d2ac575f43a1600360e7705ee, type: 2}
+    - {fileID: 21300000, guid: 4ee05521d4ddd704f960653ad82e7c4c, type: 2}
+    - {fileID: 21300000, guid: 8022d5171903979499313650aa7f3dc2, type: 2}
+    - {fileID: 21300000, guid: 5e36909aa4ebed34d8e1640f007be1d0, type: 2}
+    abilityNames:
+    - Storm Bolt
+    - Great Cleave
+    - Warcry
+    - Gods Strength
+  - key: tiny
+    displayName: Tiny
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: ee85e3911479abc4d8f1f717446bcba9, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Avalanche
+    - Toss
+    - Tree Grab
+    - Grow
+  - key: vengefulspirit
+    displayName: Vengefulspirit
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: b5388fbcef222d647905f15673dd5216, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 095555ba18d05754fb0e020f203bbc35, type: 2}
+    - {fileID: 21300000, guid: 9c38a59a9d80e40488b32cc9e42c8b7a, type: 2}
+    - {fileID: 21300000, guid: 75f1b6e1da5ff0f4fbc61fbb6ac3cd3f, type: 2}
+    - {fileID: 21300000, guid: 250d6844006b8034abaec838e898fd6a, type: 2}
+    abilityNames:
+    - Magic Missile
+    - Wave Of Terror
+    - Command Aura
+    - Nether Swap
+  - key: windrunner
+    displayName: Windranger
+    prefabResourceKey: HeroDemos/windrunner
+    portrait: {fileID: 21300000, guid: 44664bea4e43c7b46954ae60e0d97887, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 5eddac257915b724b82485053c92c696, type: 2}
+    - {fileID: 21300000, guid: fadade5eec915f349a6c1c6eb37203fd, type: 2}
+    - {fileID: 21300000, guid: df1e4baf714bb1c4b82f8e9b3c85ccfe, type: 2}
+    - {fileID: 21300000, guid: d4374935aab23134ca526c072ba9f03a, type: 2}
+    abilityNames:
+    - Shackleshot
+    - Powershot
+    - Windrun
+    - Focusfire
+  - key: zuus
+    displayName: Zeus
+    prefabResourceKey: HeroDemos/zuus
+    portrait: {fileID: 21300000, guid: b1e4eeb90f7dfbf45849fd11ee5fa1e1, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 2fa0d05ed398f6a48ac086f377931a72, type: 2}
+    - {fileID: 21300000, guid: 35ff35330bc46784eb25068f1fb153cf, type: 2}
+    - {fileID: 21300000, guid: 2e74e50942040cc4682a7ac295a8589c, type: 2}
+    - {fileID: 21300000, guid: 37b4be1e3ea51c34782f14ec9a8ecb9e, type: 2}
+    abilityNames:
+    - Arc Lightning
+    - Lightning Bolt
+    - Heavenly Jump
+    - Thundergods Wrath
+  - key: kunkka
+    displayName: Kunkka
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: b731756ca015e5140a775e52a3bdf663, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Torrent
+    - Tidebringer
+    - X Marks The Spot
+    - Ghostship
+  - key: lina
+    displayName: Lina
+    prefabResourceKey: HeroDemos/lina
+    portrait: {fileID: 21300000, guid: f07c1b18b30ba754c80c30c3513d65bc, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: ecd2dcf414a3cc14abb37cf0d73bdedb, type: 2}
+    - {fileID: 21300000, guid: 69e3f86d69ff2ec4c8a16c5bbf61b0f5, type: 2}
+    - {fileID: 21300000, guid: 528cbe10d1d115048b0c4bf6399697e0, type: 2}
+    - {fileID: 21300000, guid: 6a6e442190d51624caae33c0f9f9afca, type: 2}
+    abilityNames:
+    - Dragon Slave
+    - Light Strike Array
+    - Fiery Soul
+    - Laguna Blade
+  - key: lich
+    displayName: Lich
+    prefabResourceKey: HeroDemos/lich
+    portrait: {fileID: 21300000, guid: 05e0731b2f79bc643b9f762e36f0451f, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: fcd3af52b91fd5e459358976f131466a, type: 2}
+    - {fileID: 21300000, guid: 4eff1b1570888f64e9e30387f54d8b3b, type: 2}
+    - {fileID: 21300000, guid: 0ed253d3d67893c4fb736fec39bf248d, type: 2}
+    - {fileID: 21300000, guid: c5d0db3d0a2f113439db2041f04ff52d, type: 2}
+    abilityNames:
+    - Frost Nova
+    - Frost Shield
+    - Sinister Gaze
+    - Chain Frost
+  - key: lion
+    displayName: Lion
+    prefabResourceKey: HeroDemos/lion
+    portrait: {fileID: 21300000, guid: e91a63003a062aa49bb1c5b4cd525503, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 66fd97829823d534a97789b4d80cb0e6, type: 2}
+    - {fileID: 21300000, guid: 4a9419453d34f134ca4d18122b2d98a5, type: 2}
+    - {fileID: 21300000, guid: 40a3d8fd4180bd04d923902977d5f056, type: 2}
+    - {fileID: 21300000, guid: 1eb8c4e6b9e510d458920791480fcc5a, type: 2}
+    abilityNames:
+    - Impale
+    - Voodoo
+    - Mana Drain
+    - Finger Of Death
+  - key: shadow_shaman
+    displayName: Shadow Shaman
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 5de930e2cb3d07a469eac89743d82a73, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Ether Shock
+    - Voodoo
+    - Shackles
+    - Mass Serpent Ward
+  - key: slardar
+    displayName: Slardar
+    prefabResourceKey: HeroDemos/slardar
+    portrait: {fileID: 21300000, guid: db1ffdf4e56847349b4f38c1da9801fb, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: aedd75df8786f4c458a635ba20be3a5c, type: 2}
+    - {fileID: 21300000, guid: 8e2e57969fb411d46b685e1cdca975c5, type: 2}
+    - {fileID: 21300000, guid: b64d1fa4e15d0ce4eab5417c184a51c1, type: 2}
+    - {fileID: 21300000, guid: 4fd3aaf06ccd9904c86a1f666cb7b46e, type: 2}
+    abilityNames:
+    - Sprint
+    - Slithereen Crush
+    - Bash
+    - Amplify Damage
+  - key: tidehunter
+    displayName: Tidehunter
+    prefabResourceKey: HeroDemos/tidehunter
+    portrait: {fileID: 21300000, guid: 508b4c243163bab42812a857a6b03a7d, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 8f0642d0bb82f9c41abcdf3fb2c16424, type: 2}
+    - {fileID: 21300000, guid: 415885fe1ee18f44498b4d206f006536, type: 2}
+    - {fileID: 21300000, guid: 98e04c09fe7729a4ba83b306aa736738, type: 2}
+    - {fileID: 21300000, guid: 3e0d470f59802044fa87a916d541e7b2, type: 2}
+    abilityNames:
+    - Gush
+    - Kraken Shell
+    - Anchor Smash
+    - Ravage
+  - key: witch_doctor
+    displayName: Witch Doctor
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 9aa5b07c7e5cbf24585f328881ce0055, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 7c468db33d8cf6c4c9e7da4c66996f18, type: 2}
+    - {fileID: 21300000, guid: 78b0effbc6341ae479c809363696d5c7, type: 2}
+    - {fileID: 21300000, guid: 92ce598711932c34cab4d4b595b30e27, type: 2}
+    - {fileID: 21300000, guid: 977cb782eed6f7a4a9ceb1cdb5b953fd, type: 2}
+    abilityNames:
+    - Paralyzing Cask
+    - Voodoo Restoration
+    - Maledict
+    - Death Ward
+  - key: riki
+    displayName: Riki
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 0ea53014078f3184a8f7cef772e58f2b, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Smoke Screen
+    - Blink Strike
+    - Tricks Of The Trade
+    - Backstab
+  - key: enigma
+    displayName: Enigma
+    prefabResourceKey: HeroDemos/enigma
+    portrait: {fileID: 21300000, guid: f67b801fd5276174ab42a48dc4c1a73e, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 481da869cbf197042935af017cfa4fa3, type: 2}
+    - {fileID: 21300000, guid: 7091343616b0d4240a22452cd297cb22, type: 2}
+    - {fileID: 21300000, guid: 9d69dbca489abb54e9ebcfaaf6e98fc6, type: 2}
+    - {fileID: 21300000, guid: 54d5d325112cc3a4e80309f8fe9a11e2, type: 2}
+    abilityNames:
+    - Malefice
+    - Demonic Conversion
+    - Midnight Pulse
+    - Black Hole
+  - key: tinker
+    displayName: Tinker
+    prefabResourceKey: HeroDemos/tinker
+    portrait: {fileID: 21300000, guid: ed8973a076302f24aa5d2b2a57d5d38c, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 31cbb6b0aaf6ca441aaf2a11eac92cf9, type: 2}
+    - {fileID: 21300000, guid: 16c354a9bf833164db41f4efd959c9ec, type: 2}
+    - {fileID: 21300000, guid: 1b9ea95068238f14fa5e622ff6664e6d, type: 2}
+    - {fileID: 21300000, guid: 0a834ea0ece264f4b83feb22847a09c5, type: 2}
+    abilityNames:
+    - Laser
+    - March Of The Machines
+    - Deploy Turrets
+    - Rearm
+  - key: sniper
+    displayName: Sniper
+    prefabResourceKey: HeroDemos/sniper
+    portrait: {fileID: 21300000, guid: 619db6f1d1e08ff4eb0677dc64b715d2, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: cc5e513eee813d0488e02894eb1545bb, type: 2}
+    - {fileID: 21300000, guid: 82ce97b77aa908741beeafb594b390b3, type: 2}
+    - {fileID: 21300000, guid: 65c540d2be0b2914ba6e59627bed4d87, type: 2}
+    - {fileID: 21300000, guid: 8abe779e5608f9945bf4e9d08709cff1, type: 2}
+    abilityNames:
+    - Shrapnel
+    - Headshot
+    - Take Aim
+    - Assassinate
+  - key: necrolyte
+    displayName: Necrolyte
+    prefabResourceKey: HeroDemos/necrolyte
+    portrait: {fileID: 21300000, guid: c1a4633346c56724b8c4084d4d3bb0c2, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 1c8823ee5c0e0874c864c2c766ecded3, type: 2}
+    - {fileID: 21300000, guid: 44f9b89c4dfc0df4aac1693119dbc634, type: 2}
+    - {fileID: 21300000, guid: 1cbc7a842b973924aa05dbac79a8de80, type: 2}
+    - {fileID: 21300000, guid: 712af077a58f3ff4e987ef302f8e8b3e, type: 2}
+    abilityNames:
+    - Death Pulse
+    - Ghost Shroud
+    - Heartstopper Aura
+    - Reapers Scythe
+  - key: warlock
+    displayName: Warlock
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 614a5876b33fca04ebf2faf0c55911c6, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Fatal Bonds
+    - Shadow Word
+    - Upheaval
+    - Rain Of Chaos
+  - key: beastmaster
+    displayName: Beastmaster
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 00b6a116567a42240847a3836ddc05bd, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Wild Axes
+    - Summon Razorback
+    - Summon Raptor
+    - Primal Roar
+  - key: queenofpain
+    displayName: Queen of Pain
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: c5b3998be3d07ff47ae71ebb0615e29b, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Shadow Strike
+    - Blink
+    - Scream Of Pain
+    - Sonic Wave
+  - key: venomancer
+    displayName: Venomancer
+    prefabResourceKey: HeroDemos/venomancer
+    portrait: {fileID: 21300000, guid: 1824ebdc2053468458bc7c7da47f5fe5, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 62d487da64db92847830be83fd332338, type: 2}
+    - {fileID: 21300000, guid: c299f4a45312dcb4a8e64be231463c7c, type: 2}
+    - {fileID: 21300000, guid: 4f3b2ba5960b263479b07db29b419154, type: 2}
+    - {fileID: 21300000, guid: e7f3442d913e0c145940951242d16ea9, type: 2}
+    abilityNames:
+    - Venomous Gale
+    - Snakebite
+    - Plague Ward
+    - Noxious Plague
+  - key: faceless_void
+    displayName: Faceless Void
+    prefabResourceKey: HeroDemos/faceless_void
+    portrait: {fileID: 21300000, guid: 18b18583a78772e45932346acfc296b0, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 4c85e5f7913b0464f8b2b7cc5c1ea885, type: 2}
+    - {fileID: 21300000, guid: 4366f800f82dab244bc557da11696d34, type: 2}
+    - {fileID: 21300000, guid: f86f04d3b294b7643bdfedc1550e860b, type: 2}
+    - {fileID: 21300000, guid: 63093ec7fc53f8d48a522a8208be2709, type: 2}
+    abilityNames:
+    - Time Walk
+    - Time Dilation
+    - Time Lock
+    - Chronosphere
+  - key: skeleton_king
+    displayName: Wraith King
+    prefabResourceKey: HeroDemos/skeleton_king
+    portrait: {fileID: 21300000, guid: f10b074425ac8944cbd1690651dad1dd, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 1aea72951da50e04799814e3b584d07f, type: 2}
+    - {fileID: 21300000, guid: fe19c939dc4bdb64da6919807cfdfc81, type: 2}
+    - {fileID: 21300000, guid: a41cc65de3be62d43804d2d2ed266eb6, type: 2}
+    - {fileID: 21300000, guid: e8566798ee0c3464fa6ba637e3c1d6b8, type: 2}
+    abilityNames:
+    - Hellfire Blast
+    - Bone Guard
+    - Mortal Strike
+    - Reincarnation
+  - key: death_prophet
+    displayName: Death Prophet
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 4f29029465742124bbf58f6ef2bdfaf3, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Carrion Swarm
+    - Silence
+    - Spirit Siphon
+    - Exorcism
+  - key: phantom_assassin
+    displayName: Phantom Assassin
+    prefabResourceKey: HeroDemos/phantom_assassin
+    portrait: {fileID: 21300000, guid: bab45b017eda57b42b67c93d1274e953, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 865e7bbfaf328ca4d90fc1506b0ebc24, type: 2}
+    - {fileID: 21300000, guid: 71b58b25efd903749bdf4bcfc4aa3d30, type: 2}
+    - {fileID: 21300000, guid: 97b63585b001ac241a8a9f4784ab84c3, type: 2}
+    - {fileID: 21300000, guid: e5986ebcb0343394499a05f9b3658ff7, type: 2}
+    abilityNames:
+    - Stifling Dagger
+    - Phantom Strike
+    - Blur
+    - Coup De Grace
+  - key: pugna
+    displayName: Pugna
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 2fbbec380516bf343a115f1369dd9e4a, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Nether Blast
+    - Decrepify
+    - Nether Ward
+    - Life Drain
+  - key: templar_assassin
+    displayName: Templar Assassin
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 2a7e7372f2af08b4d914cf270e359732, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Refraction
+    - Meld
+    - Psi Blades
+    - Psionic Trap
+  - key: viper
+    displayName: Viper
+    prefabResourceKey: HeroDemos/viper
+    portrait: {fileID: 21300000, guid: c41c4dc660fe1e4408e8e219f70124d3, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: abaefb97792970e43be9929a8e699654, type: 2}
+    - {fileID: 21300000, guid: 8e1c75ae99263fb43aa38902ebad537b, type: 2}
+    - {fileID: 21300000, guid: 8907ef370fb35ef47a8f603bef241fb6, type: 2}
+    - {fileID: 21300000, guid: 4d13297b81510fb41a4a9b706901f988, type: 2}
+    abilityNames:
+    - Poison Attack
+    - Nethertoxin
+    - Corrosive Skin
+    - Viper Strike
+  - key: luna
+    displayName: Luna
+    prefabResourceKey: HeroDemos/luna
+    portrait: {fileID: 21300000, guid: 8ee52b314e0c2ee45b1a276344157b21, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 6b542c447a0bfad4ca0b94913e72701c, type: 2}
+    - {fileID: 21300000, guid: abe7b3fe4435b554088dba7245edb2b9, type: 2}
+    - {fileID: 21300000, guid: 84f4796da9518e041a3992ce0942892a, type: 2}
+    - {fileID: 21300000, guid: 16c8a96d4f9204b46acba3615f49456a, type: 2}
+    abilityNames:
+    - Lucent Beam
+    - Lunar Orbit
+    - Moon Glaive
+    - Eclipse
+  - key: dragon_knight
+    displayName: Dragon Knight
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 83fb6c1a071f79340abac5383c69c8bd, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Breathe Fire
+    - Dragon Tail
+    - Wyrms Wrath
+    - Elder Dragon Form
+  - key: dazzle
+    displayName: Dazzle
+    prefabResourceKey: HeroDemos/dazzle
+    portrait: {fileID: 21300000, guid: 7c3a63315d2caf846b9039ef8432be7f, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 14cec9c3955033241b44163527ea7adb, type: 2}
+    - {fileID: 21300000, guid: 0b5f41877066ea04cb35b0cb2f171e7f, type: 2}
+    - {fileID: 21300000, guid: ae8aa852915789640a994302100277c1, type: 2}
+    - {fileID: 21300000, guid: 944abc406e67d2a4fa67653e6b62ceea, type: 2}
+    abilityNames:
+    - Poison Touch
+    - Shallow Grave
+    - Shadow Wave
+    - Nothl Projection
+  - key: rattletrap
+    displayName: Clockwerk
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 5aa4e3347ceee0c4fbd0227b54c96f2e, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Battery Assault
+    - Power Cogs
+    - Rocket Flare
+    - Hookshot
+  - key: leshrac
+    displayName: Leshrac
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: bc938cd9a38f89f4d8ef319f30832c8d, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Split Earth
+    - Diabolic Edict
+    - Lightning Storm
+    - Pulse Nova
+  - key: furion
+    displayName: Nature's Prophet
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 6ffda914edcca2c42b5a0810cd03d941, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Sprout
+    - Teleportation
+    - Force Of Nature
+    - Wrath Of Nature
+  - key: life_stealer
+    displayName: Lifestealer
+    prefabResourceKey: HeroDemos/life_stealer
+    portrait: {fileID: 21300000, guid: 554d16abaf377a24fb3d606dd393e6ee, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: a8dd6720cd169f54597978e30761b2ee, type: 2}
+    - {fileID: 21300000, guid: 6d36a3ea254664e418d38714ed94e76f, type: 2}
+    - {fileID: 21300000, guid: ab2437089542df247962c9542d86e92c, type: 2}
+    - {fileID: 21300000, guid: 0547145400ddca445af0bab78dd50620, type: 2}
+    abilityNames:
+    - Rage
+    - Open Wounds
+    - Feast
+    - Infest
+  - key: dark_seer
+    displayName: Dark Seer
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 4a2cf8c5b3f029c42b00795dd6c7eb10, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Vacuum
+    - Ion Shell
+    - Surge
+    - Wall Of Replica
+  - key: clinkz
+    displayName: Clinkz
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 02429da822ea7c64aa6b6dbad3236509, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Strafe
+    - Searing Arrows
+    - Death Pact
+    - Wind Walk
+  - key: omniknight
+    displayName: Omniknight
+    prefabResourceKey: HeroDemos/omniknight
+    portrait: {fileID: 21300000, guid: a64076a04c3e28e4ebff3654b7f36976, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: bd722fd2f8905924b9651e218deac3f3, type: 2}
+    - {fileID: 21300000, guid: 74327b1aa0caa404cb1fb57171feaada, type: 2}
+    - {fileID: 21300000, guid: 4844b59f1d4abaa459c2ed7ea2b55452, type: 2}
+    - {fileID: 21300000, guid: b9d2f2fe133c7bc4eb0a71f814272608, type: 2}
+    abilityNames:
+    - Purification
+    - Martyr
+    - Hammer Of Purity
+    - Guardian Angel
+  - key: enchantress
+    displayName: Enchantress
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 3611653784ba06f47b1da2c785dacac6, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Impetus
+    - Enchant
+    - Natures Attendants
+    - Untouchable
+  - key: huskar
+    displayName: Huskar
+    prefabResourceKey: HeroDemos/huskar
+    portrait: {fileID: 21300000, guid: e2ef2c18fe0691340bbf9f36be7bb0c1, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: a57d88b0d6d38bb4f902d7f6c3fd1888, type: 2}
+    - {fileID: 21300000, guid: e9c27093d484a624f85211eccd598ddb, type: 2}
+    - {fileID: 21300000, guid: b8b19a542b6c07249a9a31a08aecda32, type: 2}
+    - {fileID: 21300000, guid: 111ebe55102ce024282d27a2529af72f, type: 2}
+    abilityNames:
+    - Inner Fire
+    - Burning Spear
+    - Berserkers Blood
+    - Life Break
+  - key: night_stalker
+    displayName: Night Stalker
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 4cc261f5dba594048bcce5b4d269bf90, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 9f95d42838c120d4ba6f281d70e76342, type: 2}
+    - {fileID: 21300000, guid: 8bac515b9eaa5f042a879be4a07fc827, type: 2}
+    - {fileID: 21300000, guid: 6d34b6013bef98842b73ef3944afcca8, type: 2}
+    - {fileID: 21300000, guid: 8c666854b91b0f64fab06af4f8b4fc97, type: 2}
+    abilityNames:
+    - Void
+    - Crippling Fear
+    - Midnight Feast
+    - Darkness
+  - key: broodmother
+    displayName: Broodmother
+    prefabResourceKey: HeroDemos/broodmother
+    portrait: {fileID: 21300000, guid: e562d6c2c4750db4592845840cbd161a, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: d137c3d28e1a38c47bc8e359c2fa9584, type: 2}
+    - {fileID: 21300000, guid: d7cf28b0e726ae645ae9d1c8ea72ff67, type: 2}
+    - {fileID: 21300000, guid: 178c96b01d036bd4aa2cf00360ba7f58, type: 2}
+    - {fileID: 21300000, guid: ff18e1a3398dd314ab9ca54f7d1bbb8c, type: 2}
+    abilityNames:
+    - Insatiable Hunger
+    - Spin Web
+    - Incapacitating Bite
+    - Spawn Spiderlings
+  - key: bounty_hunter
+    displayName: Bounty Hunter
+    prefabResourceKey: HeroDemos/bounty_hunter
+    portrait: {fileID: 21300000, guid: 510cab417506bb940b5734b58acecced, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 998d12a5f6bd3144b985d5c45f7d1cb5, type: 2}
+    - {fileID: 21300000, guid: af38074c3ad9a164da954c70e57ba997, type: 2}
+    - {fileID: 21300000, guid: ea00e22f94904324cbd94716a62428a3, type: 2}
+    - {fileID: 21300000, guid: a446e75d12edc4444adce3f7c0eafe0d, type: 2}
+    abilityNames:
+    - Shuriken Toss
+    - Jinada
+    - Wind Walk
+    - Track
+  - key: weaver
+    displayName: Weaver
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 385ca125a253911448ca693eb076db3b, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - The Swarm
+    - Shukuchi
+    - Geminate Attack
+    - Time Lapse
+  - key: jakiro
+    displayName: Jakiro
+    prefabResourceKey: HeroDemos/jakiro
+    portrait: {fileID: 21300000, guid: 890214b50e73748408ba793b0e93ada0, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: e63a25fb9372af147b108c3029fb8a1b, type: 2}
+    - {fileID: 21300000, guid: 49533ed0d5cbd3c4eb3bfb1e1eeb9a37, type: 2}
+    - {fileID: 21300000, guid: 0d03f306ffffa0d409ea053dba6b0789, type: 2}
+    - {fileID: 21300000, guid: ad4f57dcf242bbf46a3073ee70fbbe7a, type: 2}
+    abilityNames:
+    - Dual Breath
+    - Ice Path
+    - Liquid Fire
+    - Macropyre
+  - key: batrider
+    displayName: Batrider
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 976b8478e435bba46a2904480a28ef8c, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Sticky Napalm
+    - Flamebreak
+    - Firefly
+    - Flaming Lasso
+  - key: chen
+    displayName: Chen
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 782c4f8df2545bb42a464a4267649439, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Penitence
+    - Holy Persuasion
+    - Divine Favor
+    - Hand Of God
+  - key: spectre
+    displayName: Spectre
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: dfee7202784fa3348b076ec12aa9f8dc, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Spectral Dagger
+    - Shadow Step
+    - Dispersion
+    - Haunt
+  - key: doom_bringer
+    displayName: Doom Bringer
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 625845da3fe88a749a5e3e334cc843e9, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Devour
+    - Scorched Earth
+    - Infernal Blade
+    - Doom
+  - key: ancient_apparition
+    displayName: Ancient Apparition
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: c865dae0ba90a0d47ac5fcffbb6b3138, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Cold Feet
+    - Ice Vortex
+    - Chilling Touch
+    - Ice Blast
+  - key: ursa
+    displayName: Ursa
+    prefabResourceKey: HeroDemos/ursa
+    portrait: {fileID: 21300000, guid: 114bd3ea88696f44687ef671fd5a8f7a, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: a0febf7b271c68a49a1f77a799e7922c, type: 2}
+    - {fileID: 21300000, guid: 90cc7faa1b295e94cb19ed61156400da, type: 2}
+    - {fileID: 21300000, guid: d3e0b71991c7f854198a1aecd4cfdaa2, type: 2}
+    - {fileID: 21300000, guid: 8cd6c46f7f76c6d4fb24f9af5707a517, type: 2}
+    abilityNames:
+    - Earthshock
+    - Overpower
+    - Fury Swipes
+    - Enrage
+  - key: spirit_breaker
+    displayName: Spirit Breaker
+    prefabResourceKey: HeroDemos/spirit_breaker
+    portrait: {fileID: 21300000, guid: be5cc3b9392377c44b773b6e7c500950, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: c8d15e13d8db3754da5312d0343a00ac, type: 2}
+    - {fileID: 21300000, guid: d4633064e7cf52c488af44ace004962b, type: 2}
+    - {fileID: 21300000, guid: c41365fb162fb2d4cbc27630a4a09427, type: 2}
+    - {fileID: 21300000, guid: cefcbcfee57583f40b135a8e185d3407, type: 2}
+    abilityNames:
+    - Charge Of Darkness
+    - Bulldoze
+    - Greater Bash
+    - Nether Strike
+  - key: gyrocopter
+    displayName: Gyrocopter
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 785470e69a1fe34418cb224a0e0264b9, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Rocket Barrage
+    - Homing Missile
+    - Flak Cannon
+    - Call Down
+  - key: alchemist
+    displayName: Alchemist
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 37d2d9ea253f41e43b3b3cad36d5b391, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Acid Spray
+    - Unstable Concoction
+    - Corrosive Weaponry
+    - Chemical Rage
+  - key: invoker
+    displayName: Invoker
+    prefabResourceKey: HeroDemos/invoker
+    portrait: {fileID: 21300000, guid: bbdcc8efaf4c1014887e60b8ab4c8708, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 754fc15ca58267142ac698600a2dd27e, type: 2}
+    - {fileID: 21300000, guid: 6c95258bc98d8ec49a0722a495897638, type: 2}
+    - {fileID: 21300000, guid: 75887208583ab2f4c88893625f435b7c, type: 2}
+    - {fileID: 21300000, guid: eff072f90c14ad942b7115a78a933b94, type: 2}
+    abilityNames:
+    - Quas
+    - Wex
+    - Exort
+    - Invoke
+  - key: silencer
+    displayName: Silencer
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: c0dd9328fedbd604d9474c2ee4f427b7, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Curse Of The Silent
+    - Glaives Of Wisdom
+    - Last Word
+    - Global Silence
+  - key: obsidian_destroyer
+    displayName: Outworld Destroyer
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: e5a7e978c7d026445b903e0a9fa0dcdc, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Arcane Orb
+    - Astral Imprisonment
+    - Objurgation
+    - Sanity Eclipse
+  - key: lycan
+    displayName: Lycan
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 9a79ff2085ada9b41b252f12bd109553, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Summon Wolves
+    - Howl
+    - Feral Impulse
+    - Shapeshift
+  - key: brewmaster
+    displayName: Brewmaster
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 7c4be18e5d487fd4ab7aafd8b0e5194c, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Thunder Clap
+    - Cinder Brew
+    - Drunken Brawler
+    - Primal Split
+  - key: shadow_demon
+    displayName: Shadow Demon
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 51bb5e91e99ea8947a22c5203da9e4ad, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Disruption
+    - Disseminate
+    - Shadow Poison
+    - Demonic Purge
+  - key: lone_druid
+    displayName: Lone Druid
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 6ec3058d78d7343419d38cf5b3e553ad, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Entangle
+    - Spirit Link
+    - Savage Roar
+    - True Form
+  - key: chaos_knight
+    displayName: Chaos Knight
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 108ef1f6d32f546439adbce07135828e, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Chaos Bolt
+    - Reality Rift
+    - Chaos Strike
+    - Phantasm
+  - key: meepo
+    displayName: Meepo
+    prefabResourceKey: HeroDemos/meepo
+    portrait: {fileID: 21300000, guid: f8e9438db7f6116488ff4e1b2448adc3, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 0702c91763fabef4d9c569df8e8f8852, type: 2}
+    - {fileID: 21300000, guid: 7517a2e195d0afa46ac3184917d376c2, type: 2}
+    - {fileID: 21300000, guid: 7e971a70076385a489b91cef54b828c8, type: 2}
+    - {fileID: 21300000, guid: fb700a5ae01140d41b554bc88436e658, type: 2}
+    abilityNames:
+    - Earthbind
+    - Poof
+    - Ransack
+    - Divided We Stand
+  - key: treant
+    displayName: Treant Protector
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 18db5acbd70d6444fbc89080e9592d59, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Natures Grasp
+    - Leech Seed
+    - Living Armor
+    - Overgrowth
+  - key: ogre_magi
+    displayName: Ogre Magi
+    prefabResourceKey: HeroDemos/ogre_magi
+    portrait: {fileID: 21300000, guid: 3ceef06c8a5ea0b4a92d5b9b779729f5, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 797605a5c1bec604a954d58328098c72, type: 2}
+    - {fileID: 21300000, guid: a8c2664fc349f0d489fc5b810e9f4b4b, type: 2}
+    - {fileID: 21300000, guid: 62567d53f2183bf4392704e63057cda9, type: 2}
+    - {fileID: 21300000, guid: 0336c9d45f482c041a794a7c5501267f, type: 2}
+    abilityNames:
+    - Fireblast
+    - Ignite
+    - Bloodlust
+    - Unrefined Fireblast
+  - key: undying
+    displayName: Undying
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: a34710a7f35f9484fba574ea608d1eb5, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Decay
+    - Soul Rip
+    - Tombstone
+    - Flesh Golem
+  - key: rubick
+    displayName: Rubick
+    prefabResourceKey: HeroDemos/rubick
+    portrait: {fileID: 21300000, guid: fc92ab781a6f1ff4d8711ca9b7ab0289, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: a5ae9a555131f2e4e9641911fbaefc89, type: 2}
+    - {fileID: 21300000, guid: 97647350ed0d41f48846658663b6db06, type: 2}
+    - {fileID: 21300000, guid: d2616aa371f6984449e33493240c324b, type: 2}
+    - {fileID: 21300000, guid: 6b08701673a49f547ad657e15fad9cbd, type: 2}
+    abilityNames:
+    - Telekinesis
+    - Fade Bolt
+    - Arcane Supremacy
+    - Spell Steal
+  - key: disruptor
+    displayName: Disruptor
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: fee922682f7c4c74d866a61889407cc6, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Thunder Strike
+    - Glimpse
+    - Kinetic Field
+    - Static Storm
+  - key: nyx_assassin
+    displayName: Nyx Assassin
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 6cf5beb2f66fcdf45841ca9dd4128b88, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Impale
+    - Jolt
+    - Spiked Carapace
+    - Vendetta
+  - key: naga_siren
+    displayName: Naga Siren
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 0662c868a2ec4914b9bc2b704d9507e5, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Mirror Image
+    - Ensnare
+    - Rip Tide
+    - Song Of The Siren
+  - key: keeper_of_the_light
+    displayName: Keeper Of The Light
+    prefabResourceKey: HeroDemos/keeper_of_the_light
+    portrait: {fileID: 21300000, guid: 378a69e70e19646428a86090ea5408d6, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 54dbeaadad7f49f43896968673630b83, type: 2}
+    - {fileID: 21300000, guid: 63ab96bdecc27dc489ac016f4f92c330, type: 2}
+    - {fileID: 21300000, guid: 7e587525a4a92d748b03ff6b6dd03ed3, type: 2}
+    - {fileID: 21300000, guid: 8d261cc590dd97642b3423e72506f225, type: 2}
+    abilityNames:
+    - Illuminate
+    - Blinding Light
+    - Chakra Magic
+    - Spirit Form
+  - key: wisp
+    displayName: Io
+    prefabResourceKey: HeroDemos/wisp
+    portrait: {fileID: 21300000, guid: d8bf1cdaf51d54d4983d65af8114e743, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 9a20e3bedc8c6e542b68ef1161bb30b2, type: 2}
+    - {fileID: 21300000, guid: 10836c46b2a2bb54c851faf55b4223cb, type: 2}
+    - {fileID: 21300000, guid: c96d67f66482ac245bccab609e21bb7d, type: 2}
+    - {fileID: 21300000, guid: abdda20966d0350429d9620a2014effd, type: 2}
+    abilityNames:
+    - Tether
+    - Spirits
+    - Overcharge
+    - Relocate
+  - key: visage
+    displayName: Visage
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 3ff1ee42ca1aa144a8971c6794316b51, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Grave Chill
+    - Soul Assumption
+    - Gravekeepers Cloak
+    - Summon Familiars
+  - key: slark
+    displayName: Slark
+    prefabResourceKey: HeroDemos/slark
+    portrait: {fileID: 21300000, guid: e02435564b5cc774caab764254dc30d9, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: b7bf3b92b924b224f99ce6c5cee6cadd, type: 2}
+    - {fileID: 21300000, guid: 3fb276ed7d7b3d142a17e11406767916, type: 2}
+    - {fileID: 21300000, guid: c02d5f81697bd824a81f46486aa5cacc, type: 2}
+    - {fileID: 21300000, guid: 7a0004196ecaee841b965c4a298a97ff, type: 2}
+    abilityNames:
+    - Dark Pact
+    - Pounce
+    - Saltwater Shiv
+    - Shadow Dance
+  - key: medusa
+    displayName: Medusa
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 60317a52bc5c16440bdbb142a0d2c6d2, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Split Shot
+    - Mystic Snake
+    - Gorgon Grasp
+    - Stone Gaze
+  - key: troll_warlord
+    displayName: Troll Warlord
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 0bd127395d8be774ab1b6ff22d3f3847, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Switch Stance
+    - Whirling Axes Ranged
+    - Whirling Axes Melee
+    - Battle Trance
+  - key: centaur
+    displayName: Centaur
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: c74feb2b71e29344893af03d1a392966, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Hoof Stomp
+    - Double Edge
+    - Return
+    - Stampede
+  - key: magnataur
+    displayName: Magnataur
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 9f5944cb0c9d19647bdb7440bc50cfc2, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Shockwave
+    - Empower
+    - Skewer
+    - Reverse Polarity
+  - key: shredder
+    displayName: Timbersaw
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 013824c93d0b58741b3a19724e33b83e, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Whirling Death
+    - Timber Chain
+    - Reactive Armor
+    - Chakram
+  - key: bristleback
+    displayName: Bristleback
+    prefabResourceKey: HeroDemos/bristleback
+    portrait: {fileID: 21300000, guid: f5869a6706f398d499223e2cca7aa918, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: b6a347b96e4d1f344bd387b1aceb1249, type: 2}
+    - {fileID: 21300000, guid: ee25951dfe2efec4a8fc71a646683916, type: 2}
+    - {fileID: 21300000, guid: 05583d8af04937d4a935f1e048954acb, type: 2}
+    - {fileID: 21300000, guid: c834b3ef620bc7649b2340c5ba5f57a4, type: 2}
+    abilityNames:
+    - Viscous Nasal Goo
+    - Quill Spray
+    - Bristleback
+    - Warpath
+  - key: tusk
+    displayName: Tusk
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 393cea5d28ce51f4c987128f804cdd1c, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Ice Shards
+    - Snowball
+    - Tag Team
+    - Walrus Punch
+  - key: skywrath_mage
+    displayName: Skywrath Mage
+    prefabResourceKey: HeroDemos/skywrath_mage
+    portrait: {fileID: 21300000, guid: 185e35777d464694cbb4dbb96e13a7ab, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: d553c8128ece96242b6b31e12fa34f39, type: 2}
+    - {fileID: 21300000, guid: 60a70e9a64a7c5d41a0e6aef4a9d145c, type: 2}
+    - {fileID: 21300000, guid: d1d069fa94f09ab43b8106de9c9dc006, type: 2}
+    - {fileID: 21300000, guid: 58d57cddbe84a16499babe39acd6b892, type: 2}
+    abilityNames:
+    - Arcane Bolt
+    - Concussive Shot
+    - Ancient Seal
+    - Mystic Flare
+  - key: abaddon
+    displayName: Abaddon
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 2c5c751179a341142b1dfe6eb802219e, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Death Coil
+    - Aphotic Shield
+    - Frostmourne
+    - Borrowed Time
+  - key: elder_titan
+    displayName: Elder Titan
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: cd54d17a411c5fc42bf2525d4b7d29fa, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Echo Stomp
+    - Ancestral Spirit
+    - Natural Order
+    - Earth Splitter
+  - key: legion_commander
+    displayName: Legion Commander
+    prefabResourceKey: HeroDemos/legion_commander
+    portrait: {fileID: 21300000, guid: 4a66b3264d3203c42959cd5ddcc4b095, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: f225d47324fa31c4a80ead7588b6b797, type: 2}
+    - {fileID: 21300000, guid: b8294da0ef897f14a9469d16e9c5791d, type: 2}
+    - {fileID: 21300000, guid: a5eb3236488d6574284d67043895ba20, type: 2}
+    - {fileID: 21300000, guid: 1d2e9ede3689b9a4a9429b960f1db19b, type: 2}
+    abilityNames:
+    - Overwhelming Odds
+    - Press The Attack
+    - Moment Of Courage
+    - Duel
+  - key: ember_spirit
+    displayName: Ember Spirit
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: fb6d291dd72e74349a8c1b4665f2aecf, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Searing Chains
+    - Sleight Of Fist
+    - Flame Guard
+    - Fire Remnant
+  - key: earth_spirit
+    displayName: Earth Spirit
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: e5f5d19e32b0b524cbed0176da4483e3, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Boulder Smash
+    - Rolling Boulder
+    - Geomagnetic Grip
+    - Magnetize
+  - key: terrorblade
+    displayName: Terrorblade
+    prefabResourceKey: HeroDemos/terrorblade
+    portrait: {fileID: 21300000, guid: 7d6aac8b602f6724fb8acbd12ae4790a, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 4f0352d6d0a9b3e40970e05feaba2d0e, type: 2}
+    - {fileID: 21300000, guid: c79b79b453c5565459daf3ca96a2c7e3, type: 2}
+    - {fileID: 21300000, guid: 925ff8eede07fdb4da7399812afbdac0, type: 2}
+    - {fileID: 21300000, guid: 1b6ee79f4ac3ac346a06a8e42d7e7026, type: 2}
+    abilityNames:
+    - Reflection
+    - Conjure Image
+    - Metamorphosis
+    - Sunder
+  - key: phoenix
+    displayName: Phoenix
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: ce48248ebb0561943a53baf9e88ed557, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Icarus Dive
+    - Fire Spirits
+    - Sun Ray
+    - Supernova
+  - key: oracle
+    displayName: Oracle
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 210fba81f6647224db845e49b02a07d9, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Fortunes End
+    - Fates Edict
+    - Purifying Flames
+    - False Promise
+  - key: techies
+    displayName: Techies
+    prefabResourceKey: HeroDemos/techies
+    portrait: {fileID: 21300000, guid: 1f3c667e4face94409b90217dba5955d, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: b71ae2d9c7129a64ea4fda7be951c640, type: 2}
+    - {fileID: 21300000, guid: ed023c20e7785dc459112ba7c46ea08e, type: 2}
+    - {fileID: 21300000, guid: be67ad1680599164dbc58c283d92bc81, type: 2}
+    - {fileID: 21300000, guid: 661f1f139cc27664b88b7e99b95065b6, type: 2}
+    abilityNames:
+    - Sticky Bomb
+    - Reactive Tazer
+    - Suicide
+    - Land Mines
+  - key: winter_wyvern
+    displayName: Winter Wyvern
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 72be771dd9a8eaf4f83192db5c27f8aa, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Arctic Burn
+    - Splinter Blast
+    - Cold Embrace
+    - Winters Curse
+  - key: arc_warden
+    displayName: Arc Warden
+    prefabResourceKey: HeroDemos/arc_warden
+    portrait: {fileID: 21300000, guid: 1b6898ceaa4de3344a8156c1bd79633a, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 62cb8a1d34978ec4a94e44e5163db00e, type: 2}
+    - {fileID: 21300000, guid: 754e17a890167a246829092e757b420b, type: 2}
+    - {fileID: 21300000, guid: 5ab89e598f80db94092024eff8744169, type: 2}
+    - {fileID: 21300000, guid: ea703e74bd1ceb44581cd4d8212dc08e, type: 2}
+    abilityNames:
+    - Flux
+    - Magnetic Field
+    - Spark Wraith
+    - Tempest Double
+  - key: abyssal_underlord
+    displayName: Abyssal Underlord
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 2e9f9a66e9eec4a4484758f9c585d8b1, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Firestorm
+    - Pit Of Malice
+    - Atrophy Aura
+    - Dark Portal
+  - key: monkey_king
+    displayName: Monkey King
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 38d5e93b34327e849bb38b5404897013, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Boundless Strike
+    - Tree Dance
+    - Primal Spring
+    - Wukongs Command
+  - key: pangolier
+    displayName: Pangolier
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 654b401741eba454e9ea0292bdbc1a46, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Swashbuckle
+    - Shield Crash
+    - Lucky Shot
+    - Gyroshell
+  - key: dark_willow
+    displayName: Dark Willow
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 86e291c826eb25a499bf0efec97f983b, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Bramble Maze
+    - Shadow Realm
+    - Cursed Crown
+    - Terrorize
+  - key: grimstroke
+    displayName: Grimstroke
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: a8d7b540dda3cb14aa6111731286be09, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Dark Artistry
+    - Ink Creature
+    - Spirit Walk
+    - Soul Chain
+  - key: mars
+    displayName: Mars
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: ca49a2afec1622c4ea825ea178e8ef2c, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Spear
+    - Gods Rebuke
+    - Bulwark
+    - Arena Of Blood
+  - key: void_spirit
+    displayName: Void Spirit
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: dd93e52855460fb4c8cb0014f65f2b50, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Aether Remnant
+    - Dissimilate
+    - Resonant Pulse
+    - Astral Step
+  - key: snapfire
+    displayName: Snapfire
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 9f76c96b25386204fb135ec218fa814d, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Scatterblast
+    - Firesnap Cookie
+    - Lil Shredder
+    - Mortimer Kisses
+  - key: hoodwink
+    displayName: Hoodwink
+    prefabResourceKey: HeroDemos/hoodwink
+    portrait: {fileID: 21300000, guid: 4ec67106905066d4982d30f4c15e991f, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: 3f9b46a80ed20a244819ad7df6677345, type: 2}
+    - {fileID: 21300000, guid: 702f7236465fba148b0d38ee14149385, type: 2}
+    - {fileID: 21300000, guid: 56c02d8fe12324b4ea2f4f91e527aa0b, type: 2}
+    - {fileID: 21300000, guid: ecb9ee4bbafada948b40e931407e0b39, type: 2}
+    abilityNames:
+    - Acorn Shot
+    - Bushwhack
+    - Scurry
+    - Sharpshooter
+  - key: dawnbreaker
+    displayName: Dawnbreaker
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: f42c2e6dccad78a4a91a98385c9b3285, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Fire Wreath
+    - Celestial Hammer
+    - Luminosity
+    - Solar Guardian
+  - key: marci
+    displayName: Marci
+    prefabResourceKey: HeroDemos/marci
+    portrait: {fileID: 21300000, guid: eb1d6e8da52733a44b85421e3de191ab, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: eb2a4078b4ad4bb46aa3860032592343, type: 2}
+    - {fileID: 21300000, guid: 129e3ed6891b1e149a8ae28ea1b308d9, type: 2}
+    - {fileID: 21300000, guid: a073793f6828e134381446a771b7a69b, type: 2}
+    - {fileID: 21300000, guid: 00df42964ba624f49865ae7f6f97e6d1, type: 2}
+    abilityNames:
+    - Grapple
+    - Companion Run
+    - Bodyguard
+    - Unleash
+  - key: primal_beast
+    displayName: Primal Beast
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 72c49fe171cb7bd469620d9f3c94029a, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Onslaught
+    - Trample
+    - Uproar
+    - Pulverize
+  - key: muerta
+    displayName: Muerta
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: a98211ea11b4aca46970906c5d9c9177, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Dead Shot
+    - The Calling
+    - Gunslinger
+    - Pierce The Veil
+  - key: ringmaster
+    displayName: Ringmaster
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: 6f6beccc54a39db42910619c7b17f6ad, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Tame The Beasts
+    - The Box
+    - Impalement
+    - Wheel
+  - key: kez
+    displayName: Kez
+    prefabResourceKey: HeroDemos/kez
+    portrait: {fileID: 21300000, guid: 9bbc9c759928d704bb5c983f1ed0be3b, type: 2}
+    abilityIcons:
+    - {fileID: 21300000, guid: a4cc0eb4eb1ccd744979400b6123134b, type: 2}
+    - {fileID: 21300000, guid: 40b51f3b32149124699616136ebb65c4, type: 2}
+    - {fileID: 21300000, guid: 05190ce28a8a47a4495826e9f62d7a3e, type: 2}
+    - {fileID: 21300000, guid: 7f10893d6568e5b4e9fdf26c592d85d8, type: 2}
+    abilityNames:
+    - Echo Slash
+    - Grappling Claw
+    - Kazurai Katana
+    - Raptor Dance
+  - key: largo
+    displayName: Largo
+    prefabResourceKey: 
+    portrait: {fileID: 21300000, guid: e039a1c5727ad5d43924d60101d4c2a3, type: 2}
+    abilityIcons:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    abilityNames:
+    - Catchy Lick
+    - Frogstomp
+    - Croak Of Genius
+    - Amphibian Rhapsody
+  defaultHeroIndex: 9
+  menuBackground: {fileID: 21300000, guid: d490cb3c221fdf348bda30416ef69fe0, type: 2}
+  dotaLogo: {fileID: 21300000, guid: 9400658b0b20ff643b9b70720f037be1, type: 2}
+  playButtonArt: {fileID: 21300000, guid: c6e2371784261c1409335742071d6534, type: 2}
+  spawnPoint: {fileID: 241112163}
+  demoCamera: {fileID: 904452696}
+--- !u!4 &400485923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400485921}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &511819366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 511819370}
+  - component: {fileID: 511819369}
+  - component: {fileID: 511819368}
+  - component: {fileID: 511819367}
+  m_Layer: 0
+  m_Name: Dota Showcase Floor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &511819367
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511819366}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: ed8a27180dbbb124aa36fc3b5d96c297, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &511819368
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511819366}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &511819369
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511819366}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &511819370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511819366}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.12, z: 0}
+  m_LocalScale: {x: 10, y: 1, z: 10}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &904452695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 904452697}
+  - component: {fileID: 904452696}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!20 &904452696
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904452695}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.009, g: 0.006, b: 0.012, a: 1}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.1
+  far clip plane: 250
+  field of view: 36
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &904452697
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904452695}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.11235941, y: -0.12108596, z: 0.013796002, w: 0.98616594}
+  m_LocalPosition: {x: 0, y: 3, z: -8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2119104616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2119104618}
+  - component: {fileID: 2119104617}
+  m_Layer: 0
+  m_Name: Showcase Key Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &2119104617
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119104616}
+  m_Enabled: 1
+  serializedVersion: 13
+  m_Type: 1
+  m_Color: {r: 1, g: 0.78, b: 0.73, a: 1}
+  m_Intensity: 1.65
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize2D: {x: 0.5, y: 0.5}
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShapeRadius: 0.025
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
+--- !u!4 &2119104618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119104616}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.39465487, y: -0.22100666, z: 0.09839851, w: 0.8864093}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 511819370}
+  - {fileID: 2119104618}
+  - {fileID: 241112163}
+  - {fileID: 904452697}
+  - {fileID: 400485923}

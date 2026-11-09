@@ -1,24 +1,26 @@
-# Dota 2 Mobile v1.4 iOS boot demo
+# Dota 2 Mobile v1.4 offline iOS port
 
-This iOS export uses Shadow Fiend assets from `Dota-2-Mobile-v1.4-APKVISION.apk` and was generated with Unity `6000.6.7f1` for IL2CPP and Apple Metal.
+The iOS build uses the v1.4 APK's recovered assets and Unity `6000.6.7f1`, with IL2CPP and Apple Metal.
 
-## What currently runs
+## Available offline flow
 
-- The iOS player opens a dark, card-based Dota 2 Mobile launcher.
-- Play opens a standalone Shadow Fiend stage with basic touch-to-move input.
-- The APK's recovered gameplay methods are stubs. Full matches, abilities, and server simulation are not implemented in this build.
-- The project in `ExportedProject/build_ios` is the native Xcode export used by CI. The full AssetRipper Unity source tree is not included here.
+- Main Menu → Offline Game Modes → Hero Selection → Hero Demo or Skill Practice.
+- Hero Collection opens the roster directly. It contains 127 recovered hero portraits; 57 heroes have a recovered base 3D model for the local demo. Portrait-only entries are disabled for 3D play.
+- In a demo, the virtual joystick and tap-to-move control movement. Attack and Q/W/E/R buttons trigger local preview effects, cooldown feedback, and damage to a practice target.
+- All menus, demos, and practice targets run locally. The app has no multiplayer, matchmaking, account login, or server connection.
 
-The editor boot scripts are under `ExportedProject/Assets/IOSPort`. With the complete Unity asset export restored, the helper reads the APK's original hero prefab, creates a clean showcase scene, removes gameplay-only components from the display prefab, and generates an iOS Xcode project.
+## Limits of the recovered APK
+
+The APK's IL2CPP gameplay methods are stubs. Its original match simulation, exact hero spell logic, and network play cannot be restored from this export. The demo HUD uses local showcase effects and a training target; it is not a Dota match or an exact implementation of each hero's abilities.
 
 ## Build the IPA
 
-GitHub Actions runs `../.github/workflows/build-ios.yml` on macOS, reassembles any chunked Xcode files, archives `Unity-iPhone.xcodeproj`, and uploads an unsigned IPA. An unsigned IPA must be signed before installation on a standard iPhone or iPad.
+GitHub Actions reassembles chunked Xcode files, archives `ExportedProject/build_ios/Unity-iPhone.xcodeproj`, and uploads an unsigned IPA. Sign the IPA before installing it on a standard iPhone or iPad.
 
-To prepare a new Xcode export for GitHub, split files above the ordinary Git file-size limit with:
+To prepare a new Xcode export, split files above the normal GitHub file-size limit with:
 
 ```bash
 python3 ../tools/chunk_large_files.py ExportedProject/build_ios
 ```
 
-The workflow rejoins the numbered parts before calling Xcode.
+The workflow rejoins the numbered parts before calling Xcode. The full AssetRipper Unity source tree is not included in this repository; the editor exporter under `ExportedProject/Assets/IOSPort/Editor` needs that complete tree to regenerate the Xcode project.

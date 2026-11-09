@@ -91,13 +91,15 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cat << 'EOF' > /tmp/release_notes.md
-          ### Dota 2 Mobile v1.4 asset boot demo (unsigned IPA)
+          ### Dota 2 Mobile v1.4 offline demo (unsigned IPA)
 
-          This build packages the Shadow Fiend assets recovered from `Dota-2-Mobile-v1.4-APKVISION.apk` and opens the v1.4 launcher on iOS.
+          This build packages the offline menu and hero demo flow recovered from `Dota-2-Mobile-v1.4-APKVISION.apk`.
 
           - Builds with Unity 6000.6.7 and Apple Metal.
-          - Play opens a standalone Shadow Fiend showcase stage with basic touch-to-move input.
-          - The APK's recovered IL2CPP gameplay methods are stubs, so this build does not provide a complete match, abilities, or server simulation.
+          - Includes 127 recovered hero portraits and 57 selectable local 3D hero demos.
+          - Includes offline hero demo and skill practice screens, touch movement, a training target, and local skill preview effects.
+          - No multiplayer, matchmaking, account login, or server connection.
+          - The APK's IL2CPP gameplay methods are stubs, so the local effects do not reproduce exact Dota spells or full match simulation.
           - The IPA is unsigned and requires signing for installation on a standard iPhone or iPad.
           EOF
 

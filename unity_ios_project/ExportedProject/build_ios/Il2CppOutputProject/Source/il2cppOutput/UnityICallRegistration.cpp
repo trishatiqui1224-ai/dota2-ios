@@ -2214,6 +2214,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_GameObject_get_layer_Injected();
 		Register_UnityEngine_GameObject_get_layer_Injected();
 
+		//System.IntPtr UnityEngine.GameObject::CreatePrimitive_Injected(UnityEngine.PrimitiveType)
+		void Register_UnityEngine_GameObject_CreatePrimitive_Injected();
+		Register_UnityEngine_GameObject_CreatePrimitive_Injected();
+
 		//System.IntPtr UnityEngine.GameObject::Find_Injected(UnityEngine.Bindings.ManagedSpanWrapper&)
 		void Register_UnityEngine_GameObject_Find_Injected();
 		Register_UnityEngine_GameObject_Find_Injected();
@@ -3216,6 +3220,46 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.LightProbesQuery
 
+	//Start Registrations for type : UnityEngine.LineRenderer
+
+		//System.Void UnityEngine.LineRenderer::SetPosition_Injected(System.IntPtr,System.Int32,UnityEngine.Vector3&)
+		void Register_UnityEngine_LineRenderer_SetPosition_Injected();
+		Register_UnityEngine_LineRenderer_SetPosition_Injected();
+
+		//System.Void UnityEngine.LineRenderer::get_startColor_Injected(System.IntPtr,UnityEngine.Color&)
+		void Register_UnityEngine_LineRenderer_get_startColor_Injected();
+		Register_UnityEngine_LineRenderer_get_startColor_Injected();
+
+		//System.Void UnityEngine.LineRenderer::set_endColor_Injected(System.IntPtr,UnityEngine.Color&)
+		void Register_UnityEngine_LineRenderer_set_endColor_Injected();
+		Register_UnityEngine_LineRenderer_set_endColor_Injected();
+
+		//System.Void UnityEngine.LineRenderer::set_loop_Injected(System.IntPtr,System.Boolean)
+		void Register_UnityEngine_LineRenderer_set_loop_Injected();
+		Register_UnityEngine_LineRenderer_set_loop_Injected();
+
+		//System.Void UnityEngine.LineRenderer::set_numCapVertices_Injected(System.IntPtr,System.Int32)
+		void Register_UnityEngine_LineRenderer_set_numCapVertices_Injected();
+		Register_UnityEngine_LineRenderer_set_numCapVertices_Injected();
+
+		//System.Void UnityEngine.LineRenderer::set_positionCount_Injected(System.IntPtr,System.Int32)
+		void Register_UnityEngine_LineRenderer_set_positionCount_Injected();
+		Register_UnityEngine_LineRenderer_set_positionCount_Injected();
+
+		//System.Void UnityEngine.LineRenderer::set_startColor_Injected(System.IntPtr,UnityEngine.Color&)
+		void Register_UnityEngine_LineRenderer_set_startColor_Injected();
+		Register_UnityEngine_LineRenderer_set_startColor_Injected();
+
+		//System.Void UnityEngine.LineRenderer::set_useWorldSpace_Injected(System.IntPtr,System.Boolean)
+		void Register_UnityEngine_LineRenderer_set_useWorldSpace_Injected();
+		Register_UnityEngine_LineRenderer_set_useWorldSpace_Injected();
+
+		//System.Void UnityEngine.LineRenderer::set_widthMultiplier_Injected(System.IntPtr,System.Single)
+		void Register_UnityEngine_LineRenderer_set_widthMultiplier_Injected();
+		Register_UnityEngine_LineRenderer_set_widthMultiplier_Injected();
+
+	//End Registrations for type : UnityEngine.LineRenderer
+
 	//Start Registrations for type : UnityEngine.LODGroup
 
 		//System.Single UnityEngine.LODGroup::get_size_Injected(System.IntPtr)
@@ -3329,6 +3373,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Material::EnableLocalKeyword_Injected(System.IntPtr,UnityEngine.Rendering.LocalKeyword&)
 		void Register_UnityEngine_Material_EnableLocalKeyword_Injected();
 		Register_UnityEngine_Material_EnableLocalKeyword_Injected();
+
+		//System.Void UnityEngine.Material::GetColorImpl_Injected(System.IntPtr,System.Int32,UnityEngine.Color&)
+		void Register_UnityEngine_Material_GetColorImpl_Injected();
+		Register_UnityEngine_Material_GetColorImpl_Injected();
 
 		//System.Void UnityEngine.Material::SetColorImpl_Injected(System.IntPtr,System.Int32,UnityEngine.Color&)
 		void Register_UnityEngine_Material_SetColorImpl_Injected();
@@ -4210,6 +4258,22 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_RectOffset_Remove_Injected();
 		Register_UnityEngine_RectOffset_Remove_Injected();
 
+		//System.Void UnityEngine.RectOffset::set_bottom_Injected(System.IntPtr,System.Int32)
+		void Register_UnityEngine_RectOffset_set_bottom_Injected();
+		Register_UnityEngine_RectOffset_set_bottom_Injected();
+
+		//System.Void UnityEngine.RectOffset::set_left_Injected(System.IntPtr,System.Int32)
+		void Register_UnityEngine_RectOffset_set_left_Injected();
+		Register_UnityEngine_RectOffset_set_left_Injected();
+
+		//System.Void UnityEngine.RectOffset::set_right_Injected(System.IntPtr,System.Int32)
+		void Register_UnityEngine_RectOffset_set_right_Injected();
+		Register_UnityEngine_RectOffset_set_right_Injected();
+
+		//System.Void UnityEngine.RectOffset::set_top_Injected(System.IntPtr,System.Int32)
+		void Register_UnityEngine_RectOffset_set_top_Injected();
+		Register_UnityEngine_RectOffset_set_top_Injected();
+
 	//End Registrations for type : UnityEngine.RectOffset
 
 	//Start Registrations for type : UnityEngine.RectTransform
@@ -4330,6 +4394,14 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Renderer_get_sortingOrder_Injected();
 		Register_UnityEngine_Renderer_get_sortingOrder_Injected();
 
+		//System.IntPtr UnityEngine.Renderer::GetMaterial_Injected(System.IntPtr)
+		void Register_UnityEngine_Renderer_GetMaterial_Injected();
+		Register_UnityEngine_Renderer_GetMaterial_Injected();
+
+		//System.Void UnityEngine.Renderer::SetMaterial_Injected(System.IntPtr,System.IntPtr)
+		void Register_UnityEngine_Renderer_SetMaterial_Injected();
+		Register_UnityEngine_Renderer_SetMaterial_Injected();
+
 		//System.Void UnityEngine.Renderer::get_bounds_Injected(System.IntPtr,UnityEngine.Bounds&)
 		void Register_UnityEngine_Renderer_get_bounds_Injected();
 		Register_UnityEngine_Renderer_get_bounds_Injected();
@@ -4345,6 +4417,14 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Renderer::set_localBounds_Injected(System.IntPtr,UnityEngine.Bounds&)
 		void Register_UnityEngine_Renderer_set_localBounds_Injected();
 		Register_UnityEngine_Renderer_set_localBounds_Injected();
+
+		//System.Void UnityEngine.Renderer::set_receiveShadows_Injected(System.IntPtr,System.Boolean)
+		void Register_UnityEngine_Renderer_set_receiveShadows_Injected();
+		Register_UnityEngine_Renderer_set_receiveShadows_Injected();
+
+		//System.Void UnityEngine.Renderer::set_shadowCastingMode_Injected(System.IntPtr,UnityEngine.Rendering.ShadowCastingMode)
+		void Register_UnityEngine_Renderer_set_shadowCastingMode_Injected();
+		Register_UnityEngine_Renderer_set_shadowCastingMode_Injected();
 
 		//System.Void UnityEngine.Renderer::set_smallMeshCulling_Injected(System.IntPtr,System.Boolean)
 		void Register_UnityEngine_Renderer_set_smallMeshCulling_Injected();
